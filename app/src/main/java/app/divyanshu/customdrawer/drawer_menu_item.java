@@ -100,6 +100,23 @@ public class drawer_menu_item
                 }
                 break;
 
+
+            case DRAWER_MENU_ITEM_PROFILE:
+                Toast.makeText(mContext, "profile", Toast.LENGTH_SHORT).show();
+                if (mCallBack != null)
+                {
+                    mCallBack.onMessagesMenuSelected();
+                }
+                break;
+
+            case DRAWER_MENU_ITEM_LOGOUT:
+                Toast.makeText(mContext, "logout", Toast.LENGTH_SHORT).show();
+                if (mCallBack != null)
+                {
+                    mCallBack.onMessagesMenuSelected();
+                }
+                break;
+
         }
     }
 
